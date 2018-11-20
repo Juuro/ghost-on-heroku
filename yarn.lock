@@ -631,9 +631,9 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-"casper@github:tryghost/Casper#2.1.0":
-  version "2.1.0"
-  resolved "https://codeload.github.com/tryghost/Casper/tar.gz/ca325285bf7c68c8afa6f7ed97fb9c92a7fa5f20"
+"casper@github:tryghost/Casper#2.7.0":
+  version "2.7.0"
+  resolved "https://codeload.github.com/tryghost/Casper/tar.gz/f695d69aeb6443c3d063d71557529d992ee7ca52"
 
 center-align@^0.1.1:
   version "0.1.3"
