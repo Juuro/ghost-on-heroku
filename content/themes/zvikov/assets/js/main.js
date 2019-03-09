@@ -5,10 +5,10 @@
 jQuery(document).ready(function($) {
 
     var config = {
-        'content-api-host': '',
-        'content-api-key': '',
+        'content-api-host': 'https://ghost-juuro.herokuapp.com',
+        'content-api-key': '792a44a688b3bcec63f26981dc',
 	};
-	
+
     var ghostAPI = new GhostContentAPI({
         host: config['content-api-host'],
         key: config['content-api-key'],
@@ -184,7 +184,7 @@ jQuery(document).ready(function($) {
         input: '#search-field',
         results: '#results',
         api: {
-            parameters: { 
+            parameters: {
                 fields: ['title', 'slug', 'published_at', 'primary_tag', 'id'],
                 include: 'tags',
             },
@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
             afterDisplay: function(results){
 
                 $('#results').empty();
-                
+
                 var tags = [];
                 $.each(results, function(index, val) {
                     if (val.obj.primary_tag) {
@@ -331,7 +331,7 @@ jQuery(document).ready(function($) {
 			});
 			bookmarks(readLaterPosts);
 		}
-		
+
 		$(content).find('.read-later').each(function(index, el) {
 			$(this).on('click', function(event) {
 				event.preventDefault();
@@ -383,7 +383,7 @@ jQuery(document).ready(function($) {
                             };
                         };
                     });
-    
+
                     tags.sort();
 
                     $.each(tags, function(index, val) {
@@ -393,7 +393,7 @@ jQuery(document).ready(function($) {
                         };
                         $('.bookmark-container').append('<h5>'+ tag +'</h5><ul data-tag="'+ val +'" class="list-box"></ul>');
 					});
-					
+
                     $.each(results, function(index, val) {
                         var dateSplit = val.published_at.split('T');
                         dateSplit = dateSplit[0].split('-');
